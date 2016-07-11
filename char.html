@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>=Write a JavaScript function to get the number of occurrences of each letter in specified string - w3resouce</title>
+</head>
+	<script type="text/javascript">
+	function getFrequency(string) {
+    var freq = {};
+    for (var i=0; i<string.length;i++) {
+        var character = string.charAt(i);
+        if (freq[character]) {
+           freq[character]++;
+        } else {
+           freq[character] = 1;
+        }
+    }
+
+    return freq;
+};
+		console.log(getFrequency("and"));
+	</script>
+<body>
+  
+</body>
+</html>
